@@ -1,0 +1,16 @@
+﻿@model Make_My_Trip.Models.Trip
+@{
+    ViewData["Title"] = "Trip Results";
+}
+
+<h2>Trip Summary</h2>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>Total Distance:</strong> @Model.Distance km</p>
+        <p><strong>Total Duration:</strong> @Model.Duration hours</p>
+        <p><strong>Fuel Cost:</strong> @Model.FuelCost SGD</p>
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Plan Another Trip</a>
