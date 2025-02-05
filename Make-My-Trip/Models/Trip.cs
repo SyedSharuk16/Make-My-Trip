@@ -2,7 +2,7 @@
 {
     public class Trip
     {
-        public List<string> Locations { get; set; }
+        public List<string> Locations { get; set; } = new List<string>();
         public double Distance { get; set; }
         public double Duration { get; set; }
         public double FuelCost { get; set; }
